@@ -7,5 +7,19 @@
 </head>
 <body>
     <h1 th:text="${hello}"/>
+    <table class="table table-primary">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="cat : ${cats}">
+                <td th:text="${cat.getName()}"/>
+                <td th:text="${cat.getAge()}"/>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>

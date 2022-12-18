@@ -13,7 +13,7 @@ public class CatController {
     @GetMapping("/home")
     public String getCat(Model model) {
         model.addAttribute("hello", "Hello Kitty Super Mors!");
-        model.addAttribute("cat", Arrays.asList(
+        model.addAttribute("cats", Arrays.asList(
                 new CatModel("Mors", 7),
                 new CatModel("Boris", 5),
                 new CatModel("Lucy", 6)
